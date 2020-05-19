@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>q8</h2>
+
+
+<input id="p" />
+<button onclick="clicked()">click me</button>
+<p id="demo"></p>
+
+<script>
+function clicked()
+{
+var txt = document.getElementById("p").value; 
+if(/@/.test(txt))
+document.getElementById("demo").innerHTML = "@ exists";
+}
+</script>
+
+</body>
+</html>

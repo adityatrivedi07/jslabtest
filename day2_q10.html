@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>q8</h2>
+
+
+<input type="number" id="p" />
+<button onclick="clicked()">click me</button>
+<p id="demo"></p>
+
+<script>
+function clicked()
+{
+var num = document.getElementById("p").value; 
+if(num.length==10)
+document.getElementById("demo").innerHTML = "Valid Number";
+else
+document.getElementById("demo").innerHTML = "Not Valid number" ;
+}
+
+</script>
+
+</body>
+</html>
