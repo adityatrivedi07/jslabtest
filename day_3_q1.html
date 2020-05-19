@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Factorial</h2>
+
+<input type="number" id="aaa" />
+<button onclick="func()">click me for fact</button>
+<p id="demo"></p>
+
+<script>
+function func()
+{
+var fact;
+var mul=1;
+var num=document.getElementById("aaa").value;
+
+ fact=(n)=>{
+
+ for(var i =n;i>0;i--)
+  {
+  mul=mul*i;
+  }
+  return mul;
+  }
+document.getElementById("demo").innerHTML=fact(num);
+}
+
+</script>
+
+</body>
+</html>

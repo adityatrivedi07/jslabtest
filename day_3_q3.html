@@ -1,0 +1,33 @@
+
+<html>
+<body>
+<p id="aaa"></p>
+<p id="abc"></p>
+
+<script>
+class math {
+
+    constructor(num) {
+    this.num = num;
+    }
+   
+static square(x)
+{r
+return x.num*x.num;
+}
+static cube(x)
+{
+return x.num*x.num*x.num;
+}
+}
+
+newacc1=new math(2);
+document.getElementById("aaa").innerHTML=math.square(newacc1);
+document.getElementById("abc").innerHTML=math.cube(newacc1);
+
+
+
+</script>
+
+</body>
+</html>

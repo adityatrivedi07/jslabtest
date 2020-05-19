@@ -1,0 +1,36 @@
+<body>
+<p id="aaa"></p>
+<p id="abc"></p>
+<p id="bbb"></p>
+<script>
+class account {
+
+    constructor(name,balance) {
+    this.name = name;
+    this.balance=balance;
+                           }
+deposit(amt){
+this.balance=this.balance+amt;
+}
+getname()
+{
+return this.name;
+}
+getbalance()
+{
+return this.balance;
+}
+}
+
+var newacc1=new account("aditya",40000);
+document.getElementById("aaa").innerHTML=newacc1.getname();
+document.getElementById("abc").innerHTML=newacc1.getbalance();
+
+newacc1.deposit(90000);
+document.getElementById("bbb").innerHTML=newacc1.getbalance();
+
+
+</script>
+
+</body>
+</html>
